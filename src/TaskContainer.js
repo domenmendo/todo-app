@@ -6,7 +6,7 @@ function Task({task,onDelete}){
             <p>
                 {task}
             </p>
-            <button className="deletebtn" onClick={onDelete}>Delete</button>
+            <button className="btn btn-primary" onClick={onDelete}>Delete</button>
         </div>
     );
 }

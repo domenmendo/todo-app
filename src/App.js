@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 import Task from './TaskContainer';
+import Header from './Header';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -20,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>TO-DO App</h1>
+      <Header title="TO-DO app"/>
       <div className="tasks-container">
         <div>
           <input
@@ -30,7 +33,7 @@ function App() {
             onChange={(e) => setInputTask(e.target.value)}
             placeholder="Enter a task..."
           />
-          <button className='addbtn' onClick={addTask}>Add Task</button>
+          <button className="btn btn-primary" onClick={addTask}>Add Task</button>
         </div>
         {tasks.map((task, index) => (
           <Task
