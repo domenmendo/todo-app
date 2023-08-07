@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Task from './TaskContainer';
 import Header from './Header';
+import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -43,6 +44,7 @@ function App() {
           />
         ))}
       </div>
+      <Footer/>
     </div>
   );
 }
